@@ -51,23 +51,23 @@ Here's an example about how a reference is used:
     
 The prompts the user would recieve are:
 
-  Enter an adjective:
+    Enter an adjective:
   
-  Enter a noun:
+    Enter a noun:
   
 Assuming the input for the adjective is 'lame' and the input for the noun is 'C#,' this is what the output would be:
 
-  He is lame. Because he is so lame, he quite likes C#.
+    He is lame. Because he is so lame, he quite likes C#.
   
 For conveinence, it's also possible to number your references' internal representations while having no effect on how the user
 is prompted. For example:
 
-  She is %adjective-1%. He is %adjective-2%.
+    She is %adjective-1%. He is %adjective-2%.
   
 The only way it is guaranteed to work correctly is if you follow the format **%wordtype-#%**. Naturally, the syntax to make
 a reference like this still remains the same:
 
-  She is %adjective-1%. Hey! I SAID SHE'S %$adjective-1%!!
+    She is %adjective-1%. Hey! I SAID SHE'S %$adjective-1%!!
   
 In the case of an unresolved reference (these are when the parser tries to acquire a value from the map but none is present)
 a ParseException is thrown. This is mainly a utility for the authors.
@@ -78,7 +78,7 @@ Other notes
 Due to the quick way files are loaded into the program, newlines aren't naturally inserted. As a result, you have to break them
 yourself using **$n**. Example:
 
-  This is one line, but after this $n it is split into two.
+    This is one line, but after this $n it is split into two.
   
 Ensure there's a space before and after the **$n** or else it will just become a part of the word it's attached to instead
 of being recognized as a symbol.
