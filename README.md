@@ -29,20 +29,21 @@ And the parser will prompt the user:
 
     Enter an animal:
     
-The prompt also checks if the word begins with a vowel and adjusts the 'a' to 'an' as demonstrated above.
+The prompt also checks if the word begins with a vowel and adjusts the 'a' to 'an' as demonstrated above. This does not
+apply to the lib file itself.
 
 References
 ==========
 
-As words are entered and replaced, each word is stored in an internal map object. This enables the user to easily reference 
-previously used words without having to prompt the user again. The syntax for references is as follows:
+As words are entered and replaced, each word is stored in an internal map object. This enables the author to easily
+reference previously used words without having to prompt the user again. The syntax for references is as follows:
 
     %$wordtype%
     
 The only difference between this and a regular placeholder is the presence of a dollar sign after the first percent sign.
 
 Each value stored in the map is just the word type without the surrounding characters, so the above example would be stored
-with the key *wordtype*. Consequently, you can put anything you want as **wordtype** and make a reference to it later, but
+with the key **wordtype**. Consequently, you can put anything you want as **wordtype** and make a reference to it later, but
 make sure you're using the correct case and spelling.
 
 Here's an example about how a reference is used:
@@ -59,7 +60,7 @@ Assuming the input for the adjective is 'lame' and the input for the noun is 'C#
 
     He is lame. Because he is so lame, he quite likes C#.
   
-For conveinence, it's also possible to number your references' internal representations while having no effect on how the user
+For convenience, it's also possible to number your references' internal representations while having no effect on how the user
 is prompted. For example:
 
     She is %adjective-1%. He is %adjective-2%.
@@ -83,4 +84,4 @@ yourself using **$n**. Example:
 Ensure there's a space before and after the **$n** or else it will just become a part of the word it's attached to instead
 of being recognized as a symbol.
 
-Happy libbing!
+Happy libbing or whatever!
