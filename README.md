@@ -50,7 +50,7 @@ Here's an example about how a reference is used:
 
     He is %adjective%. Because he is so %$adjective%, he quite likes %noun%.
     
-The prompts the user would recieve are:
+The prompts the user would receive are:
 
     Enter an adjective:
   

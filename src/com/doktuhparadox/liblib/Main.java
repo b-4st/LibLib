@@ -22,7 +22,7 @@ public class Main {
 
             if (f.exists()) { //Make sure the file exists
                 String[] rawLibWords = new BufferedReader(new FileReader(f)).lines().reduce((s, s2) -> s + "\n" + s2).get().split("\\s+"); //Stream all of the lines of the file into a string, then split it
-                Map<String, String> previousWords = new HashMap<>(4); //The map that stores the words inputted by the user for referencing
+                Map<String, String> previousWords = new HashMap<>(); //The map that stores the words inputted by the user for referencing
 
                 for (int i = 0; i < rawLibWords.length; i++) {
                     String word = rawLibWords[i];
